@@ -1,3 +1,4 @@
+<img src="./banner.png" alt="Saimum Islam">
 <!-- Title / Typing animation -->
 <div align="center">
   <h1>Hi 👋, I'm Md Saimum Islam</h1>
