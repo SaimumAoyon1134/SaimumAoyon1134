@@ -1,4 +1,4 @@
-name: Generate snake animation
+name: Generate Snake Grid
 
 on:
   schedule:
@@ -6,10 +6,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Generate Snake & Grid
         uses: Platane/snk@v3
         with:
